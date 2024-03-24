@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+* {
+                        box-sizing: border-box;
+                        font-family: "Figtree", sans-serif;
+                        margin: 0;
+                        outline: 0;
+                        padding: 0;
+  }
+:root {
+                      --Black: hsl(0, 0%, 7%);
+                      --Grey: hsl(0, 0%, 50%);
+                      --Rosa: hsl(347, 88%, 63%);
+                      --White: hsl(0, 0%, 100%);
+}
+body{
+                    background-color: var(--Rosa);
+                    display: flex;
+                    height: 100vh;
+                    justify-content: center;
+                    width: 100%;
+}
+#app {
+                  background-color: var(--White);
+                  border: 2px solid var(--Black);
+                  border-radius: 20px;
+                  box-shadow: 8px 8px 10px var(--Black);
+                  display: flex;
+                  flex-direction: column;
+                  gap: 24px;
+                  margin: 50px auto;
+                  min-height: 300px;
+                  overflow-y: auto;
+                  padding: 24px 24px;
+                  width: 384px;
+}
+#app h1 {
+            text-align: center;
+}
+input[type="text"] {
+              border: 1px solid var(--Black);
+              border-radius: 4px;
+              padding: 8px;
+              width: 100%;
+}
+button {
+          background-color: var(--Rosa);
+          border: 0;
+          border-radius: 4px;
+          color: var(--White);
+          cursor: pointer;
+          padding: 8px 16px;
+          transition: all 0.5s;
+}
+button:hover {
+           background-color: hsl(347, 52%, 43%) ;
+}
+ul {
+          list-style-type: none;
+          padding: 0;
+}
+li {
+          background-color: #f0efef;
+          border-radius: 4px;
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 6px;
+          padding: 8px;
+}
+a {
+        color: var(--Rosa);
+        text-decoration: none;
+}
+a:hover {
+        text-decoration: underline;
+}
